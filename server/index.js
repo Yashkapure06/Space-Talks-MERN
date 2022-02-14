@@ -21,11 +21,7 @@ app.get('/',(req, res)=>{
   res.send("Welcome to SpaceTalks API");
 });
 
-
-
-
-
-const CONNECTION_URL = 'mongodb+srv://memories-project:memoriesproject123@cluster0.ryutq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const CONNECTION_URL = 'Enter Your MongoDB URL';
 const PORT = process.env.PORT|| 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
