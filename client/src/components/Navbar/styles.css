@@ -1,0 +1,53 @@
+
+@font-face {font-family:"STARWARS";src:url("./fonts/STARWARS.eot") format("eot"),url("./fonts/STARWARS.woff") format("woff"),url("./fonts/STARWARS.ttf") format("truetype")}
+#earth {
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    background: url("../../images/Earth-Color4096.jpg");
+    border-radius: 50%;
+    background-size: 610px;
+    box-shadow: inset 18px 26px 36px 16px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.445);
+    animation-name: rotate;
+    animation-duration: infinite;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate;
+       -webkit-animation-duration: 30s;
+       -webkit-animation-iteration-count: infinite;
+       -webkit-animation-timing-function: linear;
+  }
+
+  #heading{
+    font-family: "STARWARS";
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 1200px) {
+    #earth {
+      width: 45%;
+      height: 120px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    #earth {
+        display: none;
+    }
+  }
+      
+  
+  @keyframes rotate {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: 590px 0px;
+    }
+  }
+  @-webkit-keyframes rotate {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: 580px 0px;
+    }
+  }
