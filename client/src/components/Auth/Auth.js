@@ -64,22 +64,8 @@ const SignUp = () => {
         </Avatar>
         <Typography component="h1" variant="h5">{ isSignup ? 'Sign up' : 'Sign in' }</Typography>
         <form className={classes.form} onSubmit={handleSubmit}>
-          {/* <Grid container spacing={2}>
-            { isSignup && (
-            <>
-              <Input style={{backgroundColor:"#fff", opacity:"0.56"}} className={classes.bg} name="firstName" label="First Name" handleChange={handleChange} autoFocus half />
-              <Input style={{backgroundColor:"#fff", opacity:"0.56"}} className={classes.bg} name="lastName" label="Last Name" handleChange={handleChange} half />
-            </>
-            )}
-            <Input style={{backgroundColor:"#fff", opacity:"0.56"}} className={classes.bg} name="email" label="Email Address" handleChange={handleChange} type="email" />
-            <Input style={{backgroundColor:"#fff", opacity:"0.56"}} className={classes.bg} name="password" label="Password" handleChange={handleChange} type={showPassword ? 'text' : 'password'} handleShowPassword={handleShowPassword} />
-            { isSignup && <Input name="confirmPassword" label="Repeat Password" handleChange={handleChange} type="password" /> }
-          </Grid>
-          <Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit}>
-            { isSignup ? 'Sign Up' : 'Sign In' }
-          </Button> */}
           <GoogleLogin
-            clientId="408411571083-n2pl3kkn331o0h3tv7glhalmivk85mjv.apps.googleusercontent.com"
+            clientId="Enter Your Client ID from Googlee Cloud Console"
             render={(renderProps) => (
               <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained">
                 Google Sign In
